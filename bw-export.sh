@@ -22,7 +22,7 @@ tar czvf $EXPORT_NAME.tar.gz export
 rm -rf export/
 
 # encrypt the archive
-gpg --symmetric --cipher-algo AES256 $EXPORT_NAME.tar.gz
+gpg -er lawrence@lawrencethorpe.uk --cipher-algo AES256 $EXPORT_NAME.tar.gz
 
 # delete unencrypted data
 rm $EXPORT_NAME.tar.gz

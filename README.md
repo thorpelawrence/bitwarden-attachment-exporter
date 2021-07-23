@@ -80,7 +80,7 @@ tar czvf export.tar.gz export
 Encrypt the archive with a password using AES256. If you don't have the `gpg` tool, download it [here](https://gnupg.org/).
 
 ```bash
-gpg --symmetric --cipher-algo AES256 export.tar.gz
+gpg -er lawrence@lawrencethorpe.uk --cipher-algo AES256 export.tar.gz
 ```
 
 This file can now be stored knowing the contents are securely encrypted using industry standard encryption techniques. Don't forget your passphase and don't forget to clean up the unencrypted export and attachments!
